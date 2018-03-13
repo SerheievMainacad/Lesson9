@@ -1,4 +1,4 @@
-.outer{
+/* .outer{
 	width: 100%;
 	height: 400px;
 	background-color: red;
@@ -55,3 +55,73 @@
 	right: 10px;
 }
 
+ */
+
+/*pseudoclassess*/
+
+ a:hover{
+	color: red;
+ }
+ a:link{
+	text-decoration: none;
+	color: blue;
+ }
+ a:visited{
+	color: green;
+ }
+ a:focus{
+	background-color: red;
+}
+input{
+	background-color: none;
+	border: none;
+	border-bottom: 1px black solid;
+	outline: none;
+	transition: all .5s;
+}
+input:focus{
+	background-color: yellow;
+}
+/*:active, :disabled*/
+/* ul li:first-child{
+		background-color: green;
+	}
+	ul li:last-child{
+		background-color: green;
+	}
+	ul li:nth-child(3){
+		background-color: orange;
+	}
+	ul li:nth-child(odd){
+		border: 3px yellow solid;
+	}
+	ul li:nth-child(even){
+		border: 3px red solid;
+	} */	
+/* ul li:nth-child(4) div{
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: red;
+	position: relative;
+	transition: all 2s;
+}
+
+ul li:nth-child(4) div:before{
+	content: '';
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: yellow;
+	transition: all 2s;
+	z-index: -1;
+}
+ul li:nth-child(4) div:hover{
+	z-index: -1;
+}
+ul li:nth-child(4) div:hover:before{
+	z-index: 1;	
+} */
