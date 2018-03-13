@@ -59,18 +59,22 @@
 
 /*pseudoclassess*/
 
- a:hover{
+/*  a:hover{
 	color: red;
- }
- a:link{
+}
+a:link{
 	text-decoration: none;
 	color: blue;
- }
- a:visited{
+}
+a:visited{
 	color: green;
- }
- a:focus{
+}
+a:focus{
 	background-color: red;
+}
+*/
+a:clicked{
+
 }
 input{
 	background-color: none;
@@ -125,3 +129,35 @@ ul li:nth-child(4) div:hover{
 ul li:nth-child(4) div:hover:before{
 	z-index: 1;	
 } */
+
+ul li a{
+	font-size: 30px;
+}
+/*неспродственно вложенный >*/
+ul > li > a{
+	background-color: lightgreen;
+}
+/*+ на том же уровне вложенности после а непосредственно следующий*/
+ul > li > a + p{
+	color: red;
+}
+/*~ на том же уровне вложенности c a, после a*/
+ul > li > a ~ p{
+	background-color: green
+}
+/*аттрибут равен =*/
+input[type="text"]{
+
+}
+/*аттрибут содержит*/
+img[src*="/posts/"]{
+
+}
+/*аттрибут заканчивается*/
+img[src$=".png"]{
+
+}
+/*аттрибут начинается с */
+a[href^="http"]{
+
+}
